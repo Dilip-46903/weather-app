@@ -1,0 +1,43 @@
+/* .infoBox{
+    text-align: center;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+} */
+
+/* Main container for whole app */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #dbeafe, #f0e4e4); /* Soft gradient */
+  overflow-y: auto;
+}
+
+/* Wrapper around the Info card */
+.infoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Card style with 3D feel */
+.cardContainer {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  padding: 0.5rem;
+  max-width: 370px;
+  width: 100%;
+}
+
+.cardContainer:hover {
+  transform: scale(1.015);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
